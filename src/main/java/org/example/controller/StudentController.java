@@ -37,7 +37,6 @@ public class StudentController {
     public List<Student> updateMultipleStudent(@RequestBody List<Student> studentList){
         return service.updateMultipleStudent(studentList);
     }
-
     @DeleteMapping("/deleteStudent/{id}")
     public Boolean deleteStudent(@PathVariable int id){
         return service.deleteStudent(id);
